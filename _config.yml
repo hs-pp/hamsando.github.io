@@ -1,8 +1,8 @@
 #-------------------------------
 # General Site Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-repository: "hs-pp/hamsando.github.io"
+url: "https://hs-pp.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+repository: "hs-pp/hs-pp.github.io"
 
 
 #-------------------------------
