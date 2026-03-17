@@ -1,10 +1,10 @@
 ---
 title: Riot Games R&D
 description: R&D Engineer
-category: Print Design
+category: Game Dev
 date: 2022-05-01
-client: Music Fest
-role: Graphic Designer
+client:
+role:
 image: '/images/portfolio/porodance.gif'
 image_caption:
 ---

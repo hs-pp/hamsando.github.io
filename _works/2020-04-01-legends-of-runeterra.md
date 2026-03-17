@@ -1,10 +1,10 @@
 ---
 title: Legends of Runeterra
 description: Metagame Features Engineer
-category: Tech
+category: Game Dev
 date: 2020-04-01
-# client: Jazz International
-role: Software Engineer
+client:
+role:
 image: '/images/portfolio/accampfire.png'
 image_caption:
 ---
