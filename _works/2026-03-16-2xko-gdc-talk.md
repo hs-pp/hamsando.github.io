@@ -5,8 +5,10 @@ category: Presentation
 priority: 6
 date_range: Mar 2026
 role: Presenter
-image: '/images/portfolio/accampfire.png'
+image: '/images/work/gdc2026/gdclogo.webp'
 image_caption:
 ---
+
+[WORK IN PROGRESS]
 
 This was a cool talk I got to do.
