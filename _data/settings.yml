@@ -48,7 +48,12 @@ social:
 hero:
   enable: true
   hero__title: Hyungjin Shin
-  hero__description: 10 years in the industry with some cool things to show for it. Welcome to my corner of game dev.
+  hero__description: |
+        10 years in the industry with some cool things to show for it. 
+        
+        Passionate about programming. Passionate about games. Passionate about making cool stuff. 
+        
+        Welcome to my corner of game dev.
   hero__image: '/images/portfolio/accampfire.png'
 
 

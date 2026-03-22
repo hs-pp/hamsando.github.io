@@ -17,7 +17,7 @@ description: Cool projects I've been a part of professionally.
 
 <div class="work-page container animate">
   <div class="row">
-    {% assign sorted = site.works | sort: 'priority' | reverse %}
+    {% assign sorted = site.works | reverse %}
     {% for work in sorted %}
       <article class="work col col-4 col-d-6 col-t-12">
         <div class="work__content">

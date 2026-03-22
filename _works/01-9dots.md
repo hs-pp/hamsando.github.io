@@ -2,7 +2,6 @@
 title: 9DOTS
 description: Summer Tech Bootcamp for Middle Schoolers
 category: Game Design
-priority: 0
 role: Teacher
 date_range: 2013, 2014, 2015
 image: '/images/work/9dots/9dotslogo.png'

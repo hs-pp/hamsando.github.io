@@ -2,7 +2,6 @@
 title: 'Vertafore'
 description: InsurTech
 category: Tech
-priority: 2
 role: Full Stack Engineer
 date_range: Feb 2018 - June 2019
 image: '/images/work/vertafore/vertaforelogo.jpg'
