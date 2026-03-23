@@ -1,6 +1,6 @@
 ---
 title: DevStats
-description: 
+description: A Wakatime plugin for Unity
 category: Game Dev Tools
 date: 2025-11-30
 progress: 100
