@@ -1,7 +1,7 @@
 #-------------------------------
 # Site Settings
 title: 
-logo: '/images/portfolio/accampfire.png'
+logo: #'/images/portfolio/accampfire.png'
 description: 
 color_scheme: dark # You can choose three modes auto, light, and dark. By default, the "auto" mode is set, which means the user can choose the light or dark mode themself.
 
@@ -16,8 +16,8 @@ menu__settings:
       url: '/work/'
     - title: 'Projects'
       url: '/projects/'
-    # - title: 'Blog'
-    #   url: '/blog/'
+    - title: 'Blog'
+      url: '/blog/'
     - title: 'About'
       url: '/about/'
     # - title: 'Pages'
@@ -33,7 +33,6 @@ menu__settings:
 author:
   author__name: Hyungjin Shin
   author__bio:
-  author__avatar: '/images/portfolio/small_headshot.png'
 
 social:
 - {icon: "ion-logo-linkedin", link: "https://www.linkedin.com/in/hyungjin-shin-481607170/"}
@@ -47,19 +46,9 @@ social:
 # Hero Settings
 hero:
   enable: true
+  hero__icon: '/images/portfolio/accampfire.png'
   hero__title: Hyungjin Shin
-  hero__description: 10 years in the industry with some cool things to show for it. Welcome to my corner of game dev.
-  hero__image: '/images/portfolio/accampfire.png'
-
-
-#-------------------------------
-# Newsletter
-mailchimp:
-  enable: false
-  mailchimp__identifier: frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3 # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
-  mailchimp__input__text: Your email address...
-  mailchimp__button__text: Subscribe
-
+  hero__description: 10 years in the industry with some cool things to show for it.
 
 #-------------------------------
 # Work Settings
@@ -91,21 +80,18 @@ blog__settings:
 footer__background__image: '/images/portfolio/accampfire.png'
 
 #-------------------------------
-# Contact Settings
-contact:
-  email: your@email.com # Add your form_id
-  description: Akio comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form
-
-# NOTE
-# Akio theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
-
+# Newsletter
+mailchimp:
+  enable: false
+  mailchimp__identifier: frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3 # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
+  mailchimp__input__text: Your email address...
+  mailchimp__button__text: Subscribe
 
 #-------------------------------
 # Comment Section (Disqus)
 disqus:
   enable: false
   disqus__identifier: anvod-studio-test # Add your shortname for Disqus Comment. For example anvod-studio-test
-
 
 #-------------------------------
 # Google Analytics

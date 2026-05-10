@@ -13,4 +13,9 @@ image_caption:
 - Lead Unity engineer developing standalone AR mobile apps for IOS and Android.
 - Designed core platform architecture for the game systems used in our applications.
 - Developed a number of Unity-Editor tools to support development workflows.
-- Developed a custom AR framework used for rapid prototyping of AR experiences. -->
+- Developed a custom AR framework used for rapid prototyping of AR experiences.
+
+
+https://www.youtube.com/watch?v=cYANRUhOIvM
+ -->
+

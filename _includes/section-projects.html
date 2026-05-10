@@ -3,8 +3,7 @@
 <div class="container">
   <section class="section works animate">
     <div class="row">
-
-      <div class="col col-4 col-d-12">
+      <div class="col col-12">
         <div class="section__info">
           <h2 class="section__title">{{ site.data.settings.projects.projects__title }}</h2>
           {% if site.data.settings.work.work__description %}
@@ -13,46 +12,43 @@
           <a href="{{ '/projects' | relative_url }}" class="section__link">Show all projects <i class="ion ion-md-arrow-forward"></i></a>
         </div>
       </div>
+    </div>
 
-      <div class="col col-8 col-d-12">
-        <div class="row">
-          {% assign sorted = site.projects | reverse %}
-          {% for project in sorted limit:4 %}
-          <article class="work col col-6 col-d-12">
-            <div class="work__content">
-              <a href="{{ project.url }}" class="work__image">
-                <img class="lazy" data-src="{{ project.image }}" alt="{{ project.title }}">
-              </a>
-              <div class="work__info">
-                <div class="work__header">
-                  {% if project.category %}
-                  <div class="work__category">{{ project.category }}</div>
-                  {% endif %}
-                  {% if project.progress %}
-                  <div class="work__progress" title="Completeness">
-                    {% if project.progress contains '%' %}
-                      {% assign prog_val = project.progress | remove: '%' %}
-                    {% else %}
-                      {% assign prog_val = project.progress %}
-                    {% endif %}
-                    <div class="progress" role="progressbar" aria-valuenow="{{ prog_val }}" aria-valuemin="0" aria-valuemax="100">
-                      <div class="progress__bar" style="width: {{ prog_val }}%;"></div>
-                    </div>
-                    <p class="progress__text">{{ prog_val }}%</p>
-                  </div>
-                  {% endif %}
-                </div>
-                <h3 class="work__title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
-                {% if project.description %}
-                <p class="work__description">{{ project.description }}</p>
+    <div class="row">
+      {% assign sorted = site.projects | reverse %}
+      {% for project in sorted limit:4 %}
+      <article class="work col col-3 col-d-6 col-t-12">
+        <div class="work__content">
+          <a href="{{ project.url }}" class="work__image">
+            <img class="lazy" data-src="{{ project.image }}" alt="{{ project.title }}">
+          </a>
+          <div class="work__info">
+            <div class="work__header">
+              {% if project.category %}
+              <div class="work__category">{{ project.category }}</div>
+              {% endif %}
+              {% if project.progress %}
+              <div class="work__progress" title="Completeness">
+                {% if project.progress contains '%' %}
+                  {% assign prog_val = project.progress | remove: '%' %}
+                {% else %}
+                  {% assign prog_val = project.progress %}
                 {% endif %}
+                <div class="progress" role="progressbar" aria-valuenow="{{ prog_val }}" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress__bar" style="width: {{ prog_val }}%;"></div>
+                </div>
+                <p class="progress__text">{{ prog_val }}%</p>
               </div>
+              {% endif %}
             </div>
-          </article>
-          {% endfor %}
+            <h3 class="work__title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
+            {% if project.description %}
+            <p class="work__description">{{ project.description }}</p>
+            {% endif %}
+          </div>
         </div>
-      </div>
-
+      </article>
+      {% endfor %}
     </div>
   </section>
 </div>
