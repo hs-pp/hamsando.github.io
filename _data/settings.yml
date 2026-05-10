@@ -88,11 +88,5 @@ mailchimp:
   mailchimp__button__text: Subscribe
 
 #-------------------------------
-# Comment Section (Disqus)
-disqus:
-  enable: false
-  disqus__identifier: anvod-studio-test # Add your shortname for Disqus Comment. For example anvod-studio-test
-
-#-------------------------------
 # Google Analytics
 google-analytics: 'G-C7965CW3DB' # Add your GA Tracking Id

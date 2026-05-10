@@ -431,35 +431,6 @@
   }
 }
 
-/* Disqus */
-.show-comments {
-  margin-top: 60px;
-  text-align: center;
-}
-
-.post__comments {
-  max-width: 840px;
-  margin: 0 auto;
-
-  &.is-open {
-    margin: 0 auto 10px;
-  }
-}
-
-/* Related posts */
-.related-posts {
-  display: none;
-
-  &.is-related {
-    display: block;
-    margin-top: 60px;
-  }
-
-  .section__title {
-    font-size: 36px;
-  }
-}
-
 /* 404 */
 .error {
   text-align: center;
