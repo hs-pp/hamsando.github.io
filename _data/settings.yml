@@ -1,10 +1,9 @@
 #-------------------------------
 # Site Settings
 title: 
-logo: #'/images/portfolio/accampfire.png'
+logo:
 description: 
-color_scheme: dark # You can choose three modes auto, light, and dark. By default, the "auto" mode is set, which means the user can choose the light or dark mode themself.
-
+color_scheme: dark # auto, light, or dark
 
 #-------------------------------
 # Navigation Settings
@@ -27,7 +26,6 @@ menu__settings:
     #   - url: '/elements/'
     #     title: 'Elements'
 
-
 #-------------------------------
 # Author Settings
 author:
@@ -37,10 +35,6 @@ author:
 social:
 - {icon: "ion-logo-linkedin", link: "https://www.linkedin.com/in/hyungjin-shin-481607170/"}
 - {icon: "ion-logo-github", link: "https://github.com/hs-pp"}
-
-# Example of adding a new link to the footer - {icon: "ion-logo-dribbble", link: "https://dribbble.com"}
-# Other icons can be found at https://ionicons.com/v4/
-
 
 #-------------------------------
 # Hero Settings
@@ -54,16 +48,17 @@ hero:
 # Work Settings
 work:
   enable: true
-  work__title: Work
-  work__description: Opportunities I've been a part of professionally.
-
+  work__title: Professional Work
+  work__description: Opportunities I've been a part of in my career.
+  work__description_long:
 
 #-------------------------------
 # Projects Settings
 projects:
   enable: true
-  projects__title: Projects
+  projects__title: Personal Projects
   projects__description: Personal projects I've done on my free time.
+  projects__description_long:
 
 #-------------------------------
 # Blog Section
@@ -74,10 +69,13 @@ blog__settings:
   blog__title: Blog
   blog__description:
 
-
 #-------------------------------
 # Footer Settings
 footer__background__image: '/images/portfolio/accampfire.png'
+
+#-------------------------------
+# Google Analytics
+google-analytics: 'G-C7965CW3DB' # Add your GA Tracking Id
 
 #-------------------------------
 # Newsletter
@@ -88,5 +86,3 @@ mailchimp:
   mailchimp__button__text: Subscribe
 
 #-------------------------------
-# Google Analytics
-google-analytics: 'G-C7965CW3DB' # Add your GA Tracking Id
