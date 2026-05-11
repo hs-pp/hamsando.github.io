@@ -17,7 +17,7 @@ layout: default
   <div class="row">
     {% assign sorted = site.works | reverse %}
     {% for work in sorted %}
-      {% include work-card.html work=work layout_size="large" %}
+      {% include work-card.html work=work layout_size="medium" %}
     {% endfor %}
   </div>
 </div>

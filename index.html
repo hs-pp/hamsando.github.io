@@ -71,7 +71,7 @@ image: '/images/01-1.jpg'
         <div class="row">
             {% assign sorted = site.works | reverse %}
             {% for work in sorted limit:4 %}
-            {% include work-card.html work=work layout_size="medium"%}
+            {% include work-card.html work=work layout_size="small"%}
             {% endfor %}
         </div>
         <a href="{{ '/work' | relative_url }}" class="section__link">Show all works <i class="ion ion-md-arrow-forward"></i></a>
