@@ -8,13 +8,17 @@
   display: flex;
   align-items: center;
   margin-bottom: 32px;
+  padding: 24px;
   padding-bottom: 32px;
+  border-radius: $global-radius;
+  background-color: var(--background-alt-color);
   border-bottom: 1px solid var(--border-color);
 }
 
 .work-banner__image {
   position: relative;
   display: block;
+  width: 160px;
   min-width: 160px;
   aspect-ratio: 1/1;
   margin-right: 32px;
@@ -202,19 +206,5 @@
     .work__category {
       font-size: 14px;
     }
-  }
-}
-
-@media (max-width: $tablet) {
-  .work-banner {
-    flex-wrap: wrap;
-    padding-bottom: 0;
-    border-bottom: none;
-  }
-
-  .work-banner__image {
-    min-width: 100%;
-    margin-right: 0;
-    margin-bottom: 24px;
   }
 }

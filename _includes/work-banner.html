@@ -1,0 +1,26 @@
+<article class="work-banner animate">
+  {% if include.work.image %}
+  <a class="work-banner__image" href="{{ include.work.url }}">
+    <img class="lazy" data-src="{{ include.work.image }}" alt="{{ include.work.title }}">
+  </a>
+  {% endif %}
+
+  <div class="work-banner__content">
+    <div class="work-banner__header">
+      {% if include.work.category %}
+      <div class="work-banner__category">{{ include.work.category }}</div>
+      {% endif %}
+      {% if include.work.date_range %}
+      <div class="work-banner__daterange">{{ include.work.date_range }}</div>
+      {% endif %}
+    </div>
+
+    <h3 class="work-banner__title">
+      <a href="{{ include.work.url }}">{{ include.work.title }}</a>
+    </h3>
+
+    {% if include.work.description %}
+    <p class="work-banner__description">{{ include.work.description }}</p>
+    {% endif %}
+  </div>
+</article>
