@@ -20,7 +20,7 @@ layout: default
         <div class="section__inner grid">
           {% if site.posts.size > 0 %}
             {% for post in paginator.posts offset:0 %}
-              {% include article.html %}
+              {% include blogpost.html %}
             {% endfor %}
           {% endif %}
         </div>

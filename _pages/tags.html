@@ -28,7 +28,7 @@ permalink: /tags/
               <div class="section__inner grid">
                 {% for post in site.tags[this_word] %}
                   {% if post.title != null %}
-                    {% include article.html %}
+                    {% include blogpost.html %}
                   {% endif %}
                 {% endfor %}
               </div>

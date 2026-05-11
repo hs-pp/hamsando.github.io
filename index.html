@@ -123,7 +123,7 @@ image: '/images/01-1.jpg'
                 <div class="section__inner">
                     {% if site.posts.size > 0 %}
                     {% for post in site.posts offset:0 limit:3 %}
-                    {% include article.html %}
+                    {% include blogpost.html %}
                     {% endfor %}
                     {% endif %}
                 </div>

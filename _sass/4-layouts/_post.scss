@@ -447,3 +447,11 @@
     }
   }
 }
+
+.content-link__error {
+  padding: 24px;
+  padding-bottom: 32px;
+  border-radius: $global-radius;
+  background-color: var(--background-alt-color);
+  border-bottom: 1px solid var(--border-color);
+}

@@ -1,0 +1,33 @@
+{% assign slug = include.slug | to_s | strip %}
+{% assign work = nil %}
+{% assign project = nil %}
+{% assign blogpost = nil %}
+
+{% if slug != "" %}
+  {% assign work = site.works | where: "slug", slug | first %}
+
+  {% if work == nil %}
+    {% assign project = site.projects | where: "slug", slug | first %}
+  {% endif %}
+
+  {% if work == nil and project == nil %}
+    {% assign blogpost = site.posts | where: "slug", slug | first %}
+  {% endif %}
+{% endif %}
+
+<div class="row">
+  {% if work %}
+    {% include work-banner.html work=work %}
+  {% elsif project %}
+    {% include project-banner.html project=project %}
+  {% elsif blogpost %}
+    {% include blogpost-banner.html blogpost=blogpost %}
+  {% else %}
+    <div class="col col-12">
+      <div class="error content-link__error">
+        <h2>Content Not Found</h2>
+        <p>No work, project, or blog post matched slug <code>{{ slug | default: "(empty)" }}</code>.</p>
+      </div>
+    </div>
+  {% endif %}
+</div>
