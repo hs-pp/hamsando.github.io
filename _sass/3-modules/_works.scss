@@ -183,9 +183,15 @@
     }
   }
 
+  .work--small & {
+    .work__title {
+      font-size: 28px;
+    }
+  }
+
   .work__description {
     display: -webkit-box;
-    margin-top: 20px;
+    margin-top: 8px;
     margin-bottom: 0;
     font-size: 18px;
     overflow-y: hidden;
