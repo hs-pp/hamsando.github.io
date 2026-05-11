@@ -3,12 +3,168 @@ layout: default
 image: '/images/01-1.jpg'
 ---
 
-{% include section-hero.html %}
+<!-- begin hero -->
+<section class="hero">
+    <div class="hero__header">
+        <div class="hero__avatar">
+            <img class="lazy" data-src="{{ site.data.settings.hero.hero__icon }}">
+        </div>
+        <h1 class="hero__title">{{ site.data.settings.hero.hero__title }}</h1>
 
-{% include section-blurb.html %}
+        <!--        {% if site.data.settings.social %}-->
+        <!--        <div class="social">-->
+        <!--            <ul class="social__list list-reset">-->
+        <!--                {% for social in site.data.settings.social %}-->
+        <!--                <li class="social__item">-->
+        <!--                    <a class="social__link" href="{{social.link}}" target="_blank" rel="noopener"-->
+        <!--                       aria-label="Social link"><i class="ion {{social.icon}}"></i></a>-->
+        <!--                </li>-->
+        <!--                {% endfor %}-->
+        <!--            </ul>-->
+        <!--        </div>-->
+        <!--        {% endif %}-->
 
-{% include section-work.html %}
+        <p class="hero__description">{{ site.data.settings.hero.hero__description }}</p>
 
-{% include section-projects.html %}
+        {% if site.data.settings.mailchimp.enable == true %}
+        <div class="hero__subscribe">
+            <form class="subscribe-form validate"
+                  action="{% if site.data.settings.mailchimp.mailchimp__identifier %}//{{site.data.settings.mailchimp.mailchimp__identifier}}{% else %}#{% endif %}"
+                  method="POST"
+                  id="membedded-subscribe-form" name="membedded-subscribe-form" target="_blank" novalidate>
+                <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
+                <input class="subscribe-email required email" id="mce-EMAIL" type="text" name="EMAIL"
+                       placeholder="{% if site.data.settings.mailchimp.mailchimp__input__text %}{{ site.data.settings.mailchimp.mailchimp__input__text }}{% else %}Email address{% endif %}">
+                <button class="button button--primary subscribe-button" id="membedded-subscribe" type="submit"
+                        name="subscribe">{{
+                    site.data.settings.mailchimp.mailchimp__button__text }}
+                </button>
+            </form>
+        </div>
+        {% endif %}
+    </div>
+</section>
+<!-- end hero -->
 
-{% include section-blog.html %}
+<!-- begin blurb -->
+<div class="container">
+    <section class="section works animate">
+        - WIP -
+    </section>
+</div>
+<!-- end blurb -->
+
+<!-- begin works -->
+<div class="container">
+    <section class="section works animate">
+        <div class="row">
+            <div class="col col-12">
+                <div class="section__info">
+                    <h2 class="section__title">{{ site.data.settings.work.work__title }}</h2>
+                    {% if site.data.settings.work.work__description %}
+                    <p class="section__description">{{ site.data.settings.work.work__description }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            {% assign sorted = site.works | reverse %}
+            {% for work in sorted limit:4 %}
+            {% include work-card.html work=work %}
+            {% endfor %}
+        </div>
+        <a href="{{ '/work' | relative_url }}" class="section__link">Show all works <i class="ion ion-md-arrow-forward"></i></a>
+    </section>
+</div>
+<!-- end works -->
+
+<!-- begin works -->
+<div class="container">
+    <section class="section works animate">
+        <div class="row">
+            <div class="col col-12">
+                <div class="section__info">
+                    <h2 class="section__title">{{ site.data.settings.projects.projects__title }}</h2>
+                    {% if site.data.settings.work.work__description %}
+                    <p class="section__description">{{ site.data.settings.projects.projects__description }}</p>
+                    {% endif %}
+                    <a href="{{ '/projects' | relative_url }}" class="section__link">Show all projects <i class="ion ion-md-arrow-forward"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            {% assign sorted = site.projects | reverse %}
+            {% for project in sorted limit:4 %}
+            <article class="work col col-3 col-d-6 col-t-12">
+                <div class="work__content">
+                    <a href="{{ project.url }}" class="work__image">
+                        <img class="lazy" data-src="{{ project.image }}" alt="{{ project.title }}">
+                    </a>
+                    <div class="work__info">
+                        <div class="work__header">
+                            {% if project.category %}
+                            <div class="work__category">{{ project.category }}</div>
+                            {% endif %}
+                            {% if project.progress %}
+                            <div class="work__progress" title="Completeness">
+                                {% if project.progress contains '%' %}
+                                {% assign prog_val = project.progress | remove: '%' %}
+                                {% else %}
+                                {% assign prog_val = project.progress %}
+                                {% endif %}
+                                <div class="progress" role="progressbar" aria-valuenow="{{ prog_val }}" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress__bar" style="width: {{ prog_val }}%;"></div>
+                                </div>
+                                <p class="progress__text">{{ prog_val }}%</p>
+                            </div>
+                            {% endif %}
+                        </div>
+                        <h3 class="work__title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
+                        {% if project.description %}
+                        <p class="work__description">{{ project.description }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </section>
+</div>
+<!-- end works -->
+
+{% if site.data.settings.blog.enable == true %}
+<!-- begin blog -->
+<div class="container">
+    <div class="row">
+        <div class="col col-12">
+
+            <section class="section section-small animate">
+                <div class="section__info">
+                    <div class="section__head">
+                        <h2 class="section__title">{{ site.data.settings.blog.blog__title }}</h2>
+                    </div>
+                    {% if site.data.settings.blog.blog__description %}
+                    <p class="section__description">{{ site.data.settings.blog.blog__description }}</p>
+                    {% endif %}
+                </div>
+
+                <div class="section__inner">
+                    {% if site.posts.size > 0 %}
+                    {% for post in site.posts offset:0 limit:3 %}
+                    {% include article.html %}
+                    {% endfor %}
+                    {% endif %}
+                </div>
+
+                <div class="section__navigation">
+                    <a href="{{ '/blog' | relative_url }}" class="button button--primary section-button">All posts <i class="ion ion-md-arrow-forward"></i></a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+<!-- end blog -->
+{% endif %}

@@ -41,7 +41,6 @@ social:
 #-------------------------------
 # Hero Settings
 hero:
-  enable: true
   hero__icon: '/images/portfolio/accampfire.png'
   hero__title: Hyungjin Shin
   hero__description: 10 years in the industry with some cool things to show for it.
@@ -49,7 +48,6 @@ hero:
 #-------------------------------
 # Work Settings
 work:
-  enable: true
   work__title: Professional Work
   work__description: Opportunities I've been a part of in my career.
   work__description_long:
@@ -57,7 +55,6 @@ work:
 #-------------------------------
 # Projects Settings
 projects:
-  enable: true
   projects__title: Personal Projects
   projects__description: Personal projects I've done on my free time.
   projects__description_long:
