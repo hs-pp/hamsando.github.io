@@ -1,13 +1,13 @@
-/* Article */
+/* Blogpost */
 .section-small {
-  .article:last-child {
+  .blogpost:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
   }
 }
 
-.article {
+.blogpost {
   display: flex;
   align-items: center;
   margin-bottom: 32px;
@@ -21,7 +21,7 @@
   }
 }
 
-.article-banner {
+.blogpost-banner {
   display: flex;
   align-items: center;
   width: 100%;
@@ -37,7 +37,7 @@
   }
 }
 
-.article-banner__image {
+.blogpost-banner__image {
   position: relative;
   display: block;
   width: 160px;
@@ -76,18 +76,18 @@
   }
 }
 
-.article-banner__content {
+.blogpost-banner__content {
   flex: 1 1 auto;
   min-width: 0;
 }
 
-.article-banner__tags {
+.blogpost-banner__tags {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 8px;
 }
 
-.article-banner__tag {
+.blogpost-banner__tag {
   display: inline-block;
   padding: 6px 12px;
   margin: 0 4px 4px 0;
@@ -104,7 +104,7 @@
   }
 }
 
-.article-banner__title {
+.blogpost-banner__title {
   margin-bottom: 16px;
   font-size: 28px;
 
@@ -115,7 +115,7 @@
   }
 }
 
-.article-banner__excerpt {
+.blogpost-banner__excerpt {
   display: -webkit-box;
   margin-bottom: 0;
   font-size: 18px;
@@ -125,7 +125,7 @@
   -webkit-box-orient: vertical;
 }
 
-.article__image {
+.blogpost__image {
   position: relative;
   display: block;
   min-width: 240px;
@@ -159,11 +159,11 @@
   }
 }
 
-.article-tags__box {
+.blogpost-tags__box {
   display: flex;
   margin-bottom: 8px;
 
-  .article__tag {
+  .blogpost__tag {
     display: inline-block;
     padding: 6px 12px;
     margin: 0 4px 4px 0;
@@ -185,7 +185,7 @@
   }
 }
 
-.article__title {
+.blogpost__title {
   margin-bottom: 16px;
   font-size: 28px;
 
@@ -200,7 +200,7 @@
   }
 }
 
-.article__excerpt {
+.blogpost__excerpt {
   display: -webkit-box;
   margin-bottom: 0;
   font-size: 18px;
@@ -210,14 +210,14 @@
   -webkit-box-orient: vertical;
 }
 
-.article__video {
+.blogpost__video {
   width: 100%;
   margin: 0 auto;     /* centers the container */
   padding: 0 1rem;    /* optional side padding on small screens */
   border-radius: $global-radius;
 }
 
-.article__video video {
+.blogpost__video video {
   width: 100%;
   height: auto;
   display: block;

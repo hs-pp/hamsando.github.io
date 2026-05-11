@@ -24,7 +24,7 @@
     {% include blogpost-banner.html blogpost=blogpost %}
   {% else %}
     <div class="col col-12">
-      <div class="error content-link__error">
+      <div class="error page-link__error">
         <h2>Content Not Found</h2>
         <p>No work, project, or blog post matched slug <code>{{ slug | default: "(empty)" }}</code>.</p>
       </div>
