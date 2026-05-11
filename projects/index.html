@@ -16,37 +16,7 @@ layout: default
 <div class="work-page container animate">
   <div class="row">
     {% for project in site.projects reversed %}
-      <article class="work col col-4 col-d-6 col-t-12">
-        <div class="work__content">
-          <a href="{{ project.url }}" class="work__image">
-            <img class="lazy" data-src="{{ project.image }}" alt="{{ project.title }}">
-          </a>
-          <div class="work__info">
-            <div class="work__header">
-            {% if project.category %}
-            <div class="work__category">{{ project.category }}</div>
-            {% endif %}
-            {% if project.progress %}
-            <div class="work__progress" title="Completeness">
-              {% if project.progress contains '%' %}
-                {% assign prog_val = project.progress | remove: '%' %}
-              {% else %}
-                {% assign prog_val = project.progress %}
-              {% endif %}
-              <div class="progress" role="progressbar" aria-valuenow="{{ prog_val }}" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress__bar" style="width: {{ prog_val }}%;"></div>
-              </div>
-              <p class="progress__text">{{ prog_val }}%</p>
-            </div>
-            {% endif %}
-            </div>
-            <h3 class="work__title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
-            {% if project.description %}
-            <p class="work__description">{{ project.description }}</p>
-            {% endif %}
-          </div>
-        </div>
-      </article>
+      {% include project-card.html project=project layout_size="large" %}
     {% endfor %}
   </div>
 </div>

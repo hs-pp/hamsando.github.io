@@ -1,7 +1,7 @@
 {% assign layout_size = include.layout_size | default: "medium" %}
 {% case layout_size %}
   {% when "large" %}
-    {% assign column_classes = "col col-6 col-d-12" %}
+    {% assign column_classes = "col col-4 col-d-6 col-t-12" %}
   {% when "medium" %}
     {% assign column_classes = "col col-3 col-d-6 col-t-12" %}
   {% else %}

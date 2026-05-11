@@ -17,27 +17,7 @@ layout: default
   <div class="row">
     {% assign sorted = site.works | reverse %}
     {% for work in sorted %}
-      <article class="work col col-4 col-d-6 col-t-12">
-        <div class="work__content">
-          <a href="{{ work.url }}" class="work__image">
-            <img class="lazy" data-src="{{ work.image }}" alt="{{ work.title }}">
-          </a>
-          <div class="work__info">
-            <div class="work__header">
-              {% if work.category %}
-              <div class="work__category">{{ work.category }}</div>
-              {% endif %}
-              {% if work.date_range %}
-              <div class="work__daterange">{{ work.date_range }}</div>
-              {% endif %}
-            </div>
-            <h3 class="work__title"><a href="{{ work.url }}">{{ work.title }}</a></h3>
-            {% if work.description %}
-            <p class="work__description">{{ work.description }}</p>
-            {% endif %}
-          </div>
-        </div>
-      </article>
+      {% include work-card.html work=work layout_size="large" %}
     {% endfor %}
   </div>
 </div>
