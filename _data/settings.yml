@@ -19,6 +19,8 @@ menu__settings:
       url: '/blog/'
     - title: 'About'
       url: '/about/'
+#    - title: 'Elements'
+#      url: '/elements'
     # - title: 'Pages'
     #   submenu:
     #   - url: '/contact/'
@@ -63,11 +65,10 @@ projects:
 #-------------------------------
 # Blog Section
 blog:
-  enable: false
-
-blog__settings:
+  enable: true
   blog__title: Blog
-  blog__description:
+  blog__description: 
+  blog__description_long:
 
 #-------------------------------
 # Footer Settings

@@ -1,16 +1,14 @@
 ---
 layout: default
-title: Blog
-description: My random writings.
 ---
 
 <div class="container">
   <div class="page-section-head">
-    <h1 class="page-title">{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.blog__settings.blog__title }}{% endif %}</h1>
-    {% if page.description %}
-      <p class="page-description">{{ page.description }}</p>
-    {% else site.data.settings.blog__settings.blog__description %}
-      <p class="page-description">{{ site.data.settings.blog__settings.blog__description }}</p>
+    <h1 class="page-title">{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.blog.blog__title }}{% endif %}</h1>
+    {% if site.data.settings.blog.blog__description_long %}
+      <p class="page-description">{{ site.data.settings.blog.blog__description_long }}</p>
+    {% else site.data.settings.blog.blog__description %}
+      <p class="page-description">{{ site.data.settings.blog.blog__description }}</p>
     {% endif %}
   </div>
 </div>

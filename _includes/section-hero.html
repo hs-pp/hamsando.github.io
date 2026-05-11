@@ -7,18 +7,18 @@
         </div>
         <h1 class="hero__title">{{ site.data.settings.hero.hero__title }}</h1>
 
-        {% if site.data.settings.social %}
-        <div class="social">
-            <ul class="social__list list-reset">
-                {% for social in site.data.settings.social %}
-                <li class="social__item">
-                    <a class="social__link" href="{{social.link}}" target="_blank" rel="noopener"
-                       aria-label="Social link"><i class="ion {{social.icon}}"></i></a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-        {% endif %}
+<!--        {% if site.data.settings.social %}-->
+<!--        <div class="social">-->
+<!--            <ul class="social__list list-reset">-->
+<!--                {% for social in site.data.settings.social %}-->
+<!--                <li class="social__item">-->
+<!--                    <a class="social__link" href="{{social.link}}" target="_blank" rel="noopener"-->
+<!--                       aria-label="Social link"><i class="ion {{social.icon}}"></i></a>-->
+<!--                </li>-->
+<!--                {% endfor %}-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        {% endif %}-->
         
         <p class="hero__description">{{ site.data.settings.hero.hero__description }}</p>
 

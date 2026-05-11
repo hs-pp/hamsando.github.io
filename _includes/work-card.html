@@ -1,0 +1,30 @@
+{% assign layout_size = include.layout_size | default: "medium" %}
+{% case layout_size %}
+  {% when "large" %}
+    {% assign column_classes = "col col-6 col-d-12" %}
+  {% when "medium" %}
+    {% assign column_classes = "col col-3 col-d-6 col-t-12" %}
+  {% else %}
+    {% assign column_classes = "col col-3 col-d-6 col-t-12" %}
+{% endcase %}
+<article class="work {{ column_classes }}">
+  <div class="work__content">
+    <a href="{{ include.work.url }}" class="work__image">
+      <img class="lazy" data-src="{{ include.work.image }}" alt="{{ include.work.title }}">
+    </a>
+    <div class="work__info">
+      <div class="work__header">
+        {% if include.work.category %}
+        <div class="work__category">{{ include.work.category }}</div>
+        {% endif %}
+        {% if include.work.date_range %}
+        <div class="work__daterange">{{ include.work.date_range }}</div>
+        {% endif %}
+      </div>
+      <h3 class="work__title"><a href="{{ include.work.url }}">{{ include.work.title }}</a></h3>
+      {% if include.work.description %}
+      <p class="work__description">{{ include.work.description }}</p>
+      {% endif %}
+    </div>
+  </div>
+</article>
