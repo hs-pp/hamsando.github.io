@@ -1,0 +1,36 @@
+<article class="work-banner animate">
+  {% if include.project.image %}
+  <a class="work-banner__image" href="{{ include.project.url }}">
+    <img class="lazy" data-src="{{ include.project.image }}" alt="{{ include.project.title }}">
+  </a>
+  {% endif %}
+
+  <div class="work-banner__content">
+    <div class="work-banner__header">
+      {% if include.project.category %}
+      <div class="work-banner__category">{{ include.project.category }}</div>
+      {% endif %}
+      {% if include.project.progress %}
+      <div class="work-banner__progress" title="Completeness">
+        {% if include.project.progress contains '%' %}
+        {% assign prog_val = include.project.progress | remove: '%' %}
+        {% else %}
+        {% assign prog_val = include.project.progress %}
+        {% endif %}
+        <div class="progress" role="progressbar" aria-valuenow="{{ prog_val }}" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress__bar" style="width: {{ prog_val }}%;"></div>
+        </div>
+        <p class="progress__text">{{ prog_val }}%</p>
+      </div>
+      {% endif %}
+    </div>
+
+    <h3 class="work-banner__title">
+      <a href="{{ include.project.url }}">{{ include.project.title }}</a>
+    </h3>
+
+    {% if include.project.description %}
+    <p class="work-banner__description">{{ include.project.description }}</p>
+    {% endif %}
+  </div>
+</article>
