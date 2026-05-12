@@ -224,6 +224,7 @@
   border-radius: $global-radius;
   overflow: hidden;
   background-color: var(--background-alt-color);
+  margin-bottom: 32px;
 
   img {
     position: absolute;
@@ -258,7 +259,7 @@
 
 .post,
 .page {
-  max-width: 840px;
+  max-width: 1000px;
   margin: 0 auto 60px;
   color: var(--text-color);
 

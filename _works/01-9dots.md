@@ -10,3 +10,5 @@ image_caption:
 [WORK IN PROGRESS]
 
 Ran a cool game design course.
+
+<img src="/images/portfolio/9dots_group.JPG" loading="lazy">
