@@ -24,13 +24,14 @@
     3.2-Hero
     3.4-Works
     3.6-Blogpost
-    3.7-Sections
-    3.8-Pagination
-    3.9-Buttons
-    3.10-Gallery
-    3.11-Contact
-    3.12-Footer
-    3.13-Scroll Button Top
+    3.7-Page Link
+    3.8-Sections
+    3.9-Pagination
+    3.10-Buttons
+    3.11-Gallery
+    3.12-Contact
+    3.13-Footer
+    3.14-Scroll Button Top
 :: 4-Layouts
     4.1-Post + Page
     4.2-Project
@@ -79,19 +80,21 @@
 @import '3-modules/works';
 /* >>>>>>>>>>>>>> :: 3.6-Blogpost <<<<<<<<<<<<<<< */
 @import '3-modules/blogpost';
-/* >>>>>>>>>>>>>> :: 3.7-Sections <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>> :: 3.7-Page Link <<<<<<<<<<<<<<< */
+@import '3-modules/page-link';
+/* >>>>>>>>>>>>>> :: 3.8-Sections <<<<<<<<<<<<<<< */
 @import '3-modules/sections';
-/* >>>>>>>>>>>>>> :: 3.8-Pagination <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>> :: 3.9-Pagination <<<<<<<<<<<<<<< */
 @import '3-modules/pagination';
-/* >>>>>>>>>>>>>> :: 3.9-Buttons <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>> :: 3.10-Buttons <<<<<<<<<<<<<<< */
 @import '3-modules/buttons';
-/* >>>>>>>>>>>>>> :: 3.10-Gallery <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>> :: 3.11-Gallery <<<<<<<<<<<<<<< */
 @import '3-modules/gallery';
-/* >>>>>>>>>>>>>> :: 3.11-Contact <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>> :: 3.12-Contact <<<<<<<<<<<<<<< */
 @import '3-modules/contact';
-/* >>>>>>>>>>>>>> :: 3.12-Footer <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>> :: 3.13-Footer <<<<<<<<<<<<<<< */
 @import '3-modules/footer';
-/* >>>>>>>>>>>>>> :: 3.13-Scroll Button Top <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>> :: 3.14-Scroll Button Top <<<<<<<<<<<<<<< */
 @import '3-modules/scroll-button-top';
 
 

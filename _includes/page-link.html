@@ -26,7 +26,7 @@
     <div class="col col-12">
       <div class="error page-link__error">
         <h2>Content Not Found</h2>
-        <p>No work, project, or blog post matched slug <code>{{ slug | default: "(empty)" }}</code>.</p>
+        <p>No work, project, or blog post matched slug <span class="page-link__slug">"{{ slug | default: "empty" }}"</span>.</p>
       </div>
     </div>
   {% endif %}
