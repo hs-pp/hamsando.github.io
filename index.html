@@ -74,7 +74,9 @@ image: '/images/01-1.jpg'
             {% include work-card.html work=work layout_size="small"%}
             {% endfor %}
         </div>
-        <a href="{{ '/work' | relative_url }}" class="section__link">Show all works <i class="ion ion-md-arrow-forward"></i></a>
+        <div>
+            <a href="{{ '/work' | relative_url }}" class="button button--primary section-button">Show all works <i class="ion ion-md-arrow-forward"></i></a>
+        </div>
     </section>
 </div>
 <!-- end works -->
@@ -89,7 +91,6 @@ image: '/images/01-1.jpg'
                     {% if site.data.settings.work.work__description %}
                     <p class="section__description">{{ site.data.settings.projects.projects__description }}</p>
                     {% endif %}
-                    <a href="{{ '/projects' | relative_url }}" class="section__link">Show all projects <i class="ion ion-md-arrow-forward"></i></a>
                 </div>
             </div>
         </div>
@@ -99,6 +100,10 @@ image: '/images/01-1.jpg'
             {% for project in sorted limit:4 %}
             {% include project-card.html project=project %}
             {% endfor %}
+        </div>
+
+        <div>
+            <a href="{{ '/projects' | relative_url }}" class="button button--primary section-button">Show all projects <i class="ion ion-md-arrow-forward"></i></a>
         </div>
     </section>
 </div>
