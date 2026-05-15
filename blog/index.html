@@ -14,17 +14,13 @@ layout: default
 </div>
 
 <div class="container">
-  <div class="row">
-    <div class="col col-12">
-      <div class="section-small">
-        <div class="section__inner grid">
-          {% if site.posts.size > 0 %}
-            {% for post in paginator.posts offset:0 %}
-              {% include blogpost.html %}
-            {% endfor %}
-          {% endif %}
-        </div>
-      </div>
+  <div class="section-small">
+    <div class="section__inner grid">
+      {% if site.posts.size > 0 %}
+        {% for post in paginator.posts offset:0 %}
+          {% include blogpost.html %}
+        {% endfor %}
+      {% endif %}
     </div>
   </div>
 </div>
