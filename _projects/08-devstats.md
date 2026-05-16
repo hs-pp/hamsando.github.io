@@ -80,7 +80,7 @@ The DevStats class also manages the settings and adjusts behavior accordingly.
 ```
 
 
-The `HeartbeatProvider` lives very close to Unity, subscribing to various Unity Editor delegates to collect "heartbeats" from various interactions including scene/prefab edits, changes to scriptable objects, and project saves.
+The `HeartbeatProvider` lives very close to Unity, subscribing to Unity Editor delegates to collect "heartbeats" from various interactions including scene/prefab edits, changes to scriptable objects, and project saves.
 
 Here's what a collected heartbeat looks like:
 ```csharp
