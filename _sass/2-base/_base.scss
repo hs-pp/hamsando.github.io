@@ -133,6 +133,15 @@ blockquote {
   }
 }
 
+code {
+  background-color: var(--syntax-highlighting-background);
+  color: var(--heading-font-color);
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border-alt-color);
+}
+
 pre {
   overflow: auto;
   padding: 15px;
@@ -142,6 +151,14 @@ pre {
   word-wrap: break-word;
   word-break: break-all;
   color: var(--heading-font-color);
+
+  code {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    border-radius: 0;
+  }
 }
 
 img,
@@ -249,4 +266,12 @@ table td {
 
 .lightense-backdrop {
   background-color: var(--background-color) !important;
+}
+
+.content-img {
+  width: 500px;
+}
+
+.content-img-large {
+  width: 840px;
 }

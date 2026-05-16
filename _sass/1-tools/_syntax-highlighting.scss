@@ -70,3 +70,14 @@
   .vi    { color: #008080 } // Name.Variable.Instance
   .il    { color: #099 } // Literal.Number.Integer.Long
 }
+
+.language-csharp .highlight {
+  .k, .kd, .kc, .kr, .kp { color: #569cd6; font-weight: normal } // keywords: public, class, void, etc.
+  .kt                      { color: #4ec9b0; font-weight: normal } // built-in types: int, string, bool
+  .nc                      { color: #4ec9b0; font-weight: normal } // class/struct names
+  .nf                      { color: #dcdcaa; font-weight: normal } // method names
+  .s, .s1, .s2, .se, .si  { color: #ce9178 }                      // strings
+  .m, .mi, .mf             { color: #b5cea8 }                      // numbers
+  .c, .c1, .cm             { color: #6a9955; font-style: normal }  // comments
+  .na                      { color: #9cdcfe }                      // attributes
+}

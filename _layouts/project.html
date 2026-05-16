@@ -35,6 +35,16 @@ layout: default
             {% if page.progress %}
             <li class="work-meta__item"><strong>Completeness:</strong> <span>{{ page.progress }}%</span></li>
             {% endif %}
+            {% if page.github %}
+            <li class="work-meta__item">
+              <a class="social__link" href="{{page.github}}" target="_blank" rel="noopener"
+                 aria-label="Social link">
+                <strong>Github </strong>
+                <i class="ion-logo-github"></i>
+              </a>
+            </li>
+            </li>
+            {% endif %}
           </ul>
         </div>
       </div>

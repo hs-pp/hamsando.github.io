@@ -52,6 +52,8 @@
     {% endif %}
   </script>
 
+  {% if page.mermaid %}{% include mermaid.html %}{% endif %}
+
   <style>
   {% capture include_to_scssify %}
     {% include main.scss %}
