@@ -8,7 +8,6 @@ image: '/images/work/portalsxr/portalsxrlogo.png'
 image_caption:
 ---
 
-[WORK IN PROGRESS]
 <!-- 
 - Lead Unity engineer developing standalone AR mobile apps for IOS and Android.
 - Designed core platform architecture for the game systems used in our applications.
@@ -19,3 +18,8 @@ image_caption:
 https://www.youtube.com/watch?v=cYANRUhOIvM
  -->
 
+<!-- company later renamed Six Degrees of Freedom
+https://www.marketingdive.com/news/hyundai-revs-up-ar-experience-in-music-midtown-festival-app/562954/
+https://www.unrealengine.com/spotlights/coachella-and-flume-go-all-in-on-concert-ar?lang=en-US
+https://vrscout.com/news/coachella-ar-interactive-stage/
+-->

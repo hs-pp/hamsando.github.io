@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About
+title: codenotes
 description: Cool description
-permalink: /about/
+permalink: /codenotes/
 image: '/images/portfolio/accampfire.png'
 image_caption: ''
 ---
