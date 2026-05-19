@@ -49,7 +49,6 @@ image: '/images/01-1.jpg'
 <!-- begin blurb -->
 <div class="container">
     <section class="section works animate">
-        <h2 class="section__title">Bio and Highlights</h2>
         <div class>
         {% assign homebio_page = site.pages | where: "path", "_pages/homebio.md" | first %}
         {{ homebio_page.content }}

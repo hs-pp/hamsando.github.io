@@ -1,0 +1,33 @@
+.homebio-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.homebio-intro__media {
+  width: 1400px;
+}
+
+.homebio-intro__image {
+  display: block;
+  width: 100%;
+  border-radius: $global-radius;
+}
+
+.homebio-intro__content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+@media (max-width: $tablet) {
+  .homebio-intro {
+    flex-direction: column;
+  }
+
+  .homebio-intro__media {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 280px;
+  }
+}

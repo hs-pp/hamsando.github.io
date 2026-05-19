@@ -2,19 +2,21 @@
 layout: page
 title: HomeBio
 ---
+<div class="homebio-intro">
+  <div class="homebio-intro__media">
+    <img class="homebio-intro__image" src="{{ '/images/portfolio/small_headshot.png' | relative_url }}" loading="lazy" alt="Your alt text">
+  </div>
 
-Hello! I’m a gameplay, around game, and systems engineer with 10 years of professional game development experience. 
+  <div class="homebio-intro__content">
+    <p>Hello! I’m a gameplay, around game, and systems engineer with 10 years of professional game development experience.</p>
 
-**Systems Design** - Good game architecture gives me life. I love designing systems as SDK’s, exposing the right API for the job and working
-with other engineers to fulfill their needs with the systems I develop. Good architecture not only keeps things clean but also gives us the
-opportunity to achieve even greater dreams in the future.
+    <p><strong>Systems Design</strong> - Good game architecture gives me life. I love designing systems as SDK’s, exposing the right API for the job and working with other engineers to fulfill their needs with the systems I develop. Good architecture not only keeps things clean but also gives us the opportunity to achieve even greater dreams in the future.</p>
 
-**Dev Workflow Tools** - I love building dev tools to streamline the gamedev process. I have built many Unity editor tools for work and for my
-personal projects.
+    <p><strong>Dev Workflow Tools</strong> - I love building dev tools to streamline the gamedev process. I have built many Unity editor tools for work and for my personal projects.</p>
 
-**Prototyping** - You can never be sure that a game design is good until it’s validated. I thrive in an environment where everyone is hungry to
-find the next coolest thing and discovering the best way to achieve it.
-I love to develop deep and well thought out code architecture to maximize flexiblity and stability for my projects.
+    <p><strong>Prototyping</strong> - You can never be sure that a game design is good until it’s validated. I thrive in an environment where everyone is hungry to find the next coolest thing and discovering the best way to achieve it. I love to develop deep and well thought out code architecture to maximize flexiblity and stability for my projects.</p>
+  </div>
+</div>
 
 -~-
 
