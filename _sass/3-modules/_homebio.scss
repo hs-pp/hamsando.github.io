@@ -1,33 +1,41 @@
 .homebio-intro {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
   margin-bottom: 32px;
+
+  .col {
+    margin-bottom: 0;
+  }
 }
 
 .homebio-intro__media {
-  width: 1400px;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.2;
+  overflow: hidden;
+  border-radius: $global-radius;
+  background-color: var(--background-alt-color);
+
+  @supports not (aspect-ratio: 1 / 1) {
+    padding-bottom: 100%;
+  }
 }
 
 .homebio-intro__image {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
-  border-radius: $global-radius;
+  height: 100%;
+  object-fit: cover;
 }
 
 .homebio-intro__content {
-  flex: 1 1 auto;
   min-width: 0;
 }
 
 @media (max-width: $tablet) {
   .homebio-intro {
-    flex-direction: column;
-  }
-
-  .homebio-intro__media {
-    flex-basis: auto;
-    width: 100%;
-    max-width: 280px;
+    .col {
+      margin-bottom: 20px;
+    }
   }
 }
