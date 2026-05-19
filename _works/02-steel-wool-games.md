@@ -8,6 +8,8 @@ image: '/images/work/steelwoolgames/steelwoolstudioslogo.png'
 image_caption:
 ---
 
+<img class="content-img-small" src="/images/work/steelwoolgames/gdc.jpg" loading="lazy">
+
 As one of three engineers in the studio I got to work on a lot of VR projects in both Unity and Unreal Engine.
 
 <img class="content-img-small" src="/images/work/steelwoolgames/bounce-header.jpg" loading="lazy">

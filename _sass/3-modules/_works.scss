@@ -7,11 +7,10 @@
 .work-banner {
   display: flex;
   align-items: center;
-  width: 100%;
-  flex: 1 1 100%;
-  margin-bottom: 32px;
-  padding: 24px;
-  padding-bottom: 32px;
+  width: 1000px;
+  margin-bottom: 24px;
+  padding: 20px;
+  padding-bottom: 24px;
   border-radius: $global-radius;
   background-color: var(--background-alt-color);
   border-bottom: 1px solid var(--border-color);
@@ -25,10 +24,10 @@
 .work-banner__image {
   position: relative;
   display: block;
-  width: 160px;
-  min-width: 160px;
+  width: 132px;
+  min-width: 132px;
   aspect-ratio: 1/1;
-  margin-right: 32px;
+  margin-right: 24px;
   border-radius: $global-radius;
   transform: translate(0);
   overflow: hidden;
@@ -57,7 +56,7 @@
 .work-banner__header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .work-banner__category,
@@ -101,8 +100,8 @@
 }
 
 .work-banner__title {
-  margin-bottom: 16px;
-  font-size: 28px;
+  margin-bottom: 12px;
+  font-size: 24px;
 
   a {
     &:hover {
@@ -114,7 +113,7 @@
 .work-banner__description {
   display: -webkit-box;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--text-alt-color);
   overflow-y: hidden;
   -webkit-line-clamp: 3;
