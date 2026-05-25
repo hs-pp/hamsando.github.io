@@ -14,7 +14,7 @@ I decided I wanted to explore engineering outside of games to grow my breadth of
 
 With me I brought my excitement for learning new tech. In the first month I had already furiously drawn out some of the tech stack I'd be working in.
 
-<img class="content-img-large" src="/images/work/vertafore/techstack.jpeg" loading="lazy">
+<img class="content-img-small" src="/images/work/vertafore/techstack.jpeg" loading="lazy">
 
 My day to day involved writing Java with SpringBoot for business logic and then Javascript, React, and Redux for the frontend client. I wrote unit tests using Jest and Mockito for the backend and Junit and Enzyme for the frontend.
 

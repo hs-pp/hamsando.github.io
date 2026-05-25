@@ -51,14 +51,14 @@ hero:
 # Work Settings
 work:
   work__title: Professional Work
-  work__description: Opportunities I've been a part of in my career.
+  work__description: Digging deeper into opportunities I've been a part of in my career.
   work__description_long:
 
 #-------------------------------
 # Projects Settings
 projects:
   projects__title: Personal Projects
-  projects__description: Personal projects I've done on my free time.
+  projects__description: A space to do slightly more technical deep dives around my passion projects.
   projects__description_long:
 
 #-------------------------------
